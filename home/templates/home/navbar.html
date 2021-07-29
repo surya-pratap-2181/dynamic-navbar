@@ -1,0 +1,42 @@
+{% load static %}
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+    <div class="collapse navbar-collapse mx-3 my-2"><img src="{% static 'images/Logo.png' %}"
+            style="width: 100px; height: 100px;" alt="School Logo"></div>
+    {% comment %} <a class="navbar-brand navbar-logo" href="#">Navbar</a> {% endcomment %}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i> Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i> About Us</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i> Admission</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i> Academics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i> Activities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i> Facilities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i> School Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i> Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
