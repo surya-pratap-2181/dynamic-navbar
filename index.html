@@ -8,64 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <style>
-      /* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
-      /* cyrillic-ext */
-      @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
-        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-        }
-        /* cyrillic */
-        @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
-        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-        }
-        /* greek-ext */
-        @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
-        unicode-range: U+1F00-1FFF;
-        }
-        /* greek */
-        @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
-        unicode-range: U+0370-03FF;
-        }
-        /* vietnamese */
-        @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-        }
-        /* latin-ext */
-        @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-        /* latin */
-        @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-
+      @import url('https://fonts.googleapis.com/css?family=Roboto');
       body{
         font-family: 'Roboto', sans-serif;
       }
@@ -82,8 +25,7 @@
         color: #fff;
       }
       .navbar-mainbg{
-        /* background-color: #5161ce; */
-        background-color: #e3f2fd;
+        background-color: #5161ce;
         padding: 0px;
       }
       #navbarSupportedContent{
@@ -102,8 +44,7 @@
         float: left;
       }
       #navbarSupportedContent ul li a{
-        /* color: rgba(255,255,255,0.5); */
-        color: rgba(0, 0, 0, 0.5);
+        color: rgba(255,255,255,0.5);
           text-decoration: none;
           font-size: 15px;
           display: block;
@@ -113,10 +54,7 @@
           position: relative;
       }
       #navbarSupportedContent>ul>li.active>a{
-        /* color: #5161ce; */
-        /* color: #e3f2fd; */
-        color: black;
-        /* color: #0624ec; */
+        color: #5161ce;
         background-color: transparent;
         transition: all 0.7s;
       }
@@ -170,8 +108,7 @@
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          /* background-color: #5161ce; */
-          background-color: #e3f2fd;
+          background-color: #5161ce;
       }
       .hori-selector .right:before{
         bottom: 0;
@@ -243,44 +180,37 @@
   </head>
   <body>
       <nav class="navbar navbar-expand-custom navbar-mainbg">
-          <a class="navbar-brand navbar-logo" href="#">Navbar</a> 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fas fa-bars text-white"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                  <div class="hori-selector">
-                      <div class="left"></div>
-                      <div class="right"></div>
-                  </div>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i> Home</a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i> About Us</a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i> Admission</a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i> Academics</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i> Activities</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i> Facilities</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i> School Information</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i> Contact</a>
-                  </li>
-              </ul>
+      <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <div class="hori-selector">
+            <div class="left"></div>
+            <div class="right"></div>
           </div>
-      </nav>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     
         <!-- Optional JavaScript; choose one of the two! -->
 
